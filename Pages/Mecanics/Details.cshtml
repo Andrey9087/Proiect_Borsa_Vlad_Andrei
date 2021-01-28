@@ -1,0 +1,49 @@
+﻿@page
+@model Proiect_Borsa_Andrei.Pages.Mecanics.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Mecanic</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Mecanic.Code)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Mecanic.Code)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Mecanic.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Mecanic.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Mecanic.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Mecanic.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Mecanic.Available)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Mecanic.Available)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Mecanic.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Mecanic.Type)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Mecanic.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
